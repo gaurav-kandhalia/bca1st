@@ -1,36 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/netflix/style.css">
 </head>
 <style>
-    .logo img{
-        border: 2px solid red;
-        width: 50px;
+    .headcontainer{
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+   
+    }
+    .logo ,.mainHeading {
+        border: 2px solid black;
+
+    }
+    .headButtons{
+        display: flex;
+        gap: 5px;
+    }
+    .mainHeading{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleText{
+        text-align: center;
+    }
+    .carts_container{
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        gap: 50px;
+    }
+    .carts{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        display: flex;
+        align-items:center;
+        justify-content: end;
+        flex-direction: column;
     }
 </style>
-
 <body>
-    <div class="container">
-        <div class="logo">
-           <img src="https://th.bing.com/th/id/OIP.LqhddEhHWnRMFIXC6sPT0QHaCS?rs=1&pid=ImgDetMain" alt="">
+    <header>
+        <div class="headcontainer">
+            <div class="logo">
+                     <img src="" alt="no image availiable">
+            </div>
+            <div class="headButtons">
+                <div class="language">
+                   <select name="language" id="">
+                    <option value="hindi">hindi</option>
+                    <option  value="english">english</option>
+                   </select>
+                </div>
+                <div class="signOut">
+  <button>signOut</button>
+                </div>
+            </div>
+
+            <div class="hero">
+               
+            </div>
         </div>
-        <div class="buttons">
-            <div class="btns">
-              <select name="language" id="">
-                <option value="eng">eng</option>
-                <option value="hindi">hindi</option>
-              </select>
+    </header>
+
+    <section>
+        <div class="mainHeading">
+          <div class="titleText">
+            <h1>Unlimited movies, <br> shows and more</h1>
+            <span>Starts at ₹149. Cancel at any time.</span>
+          </div>
+            <div class="sign-up">
+                <button>sign-up ></button>
             </div>
-            <div class="btns">
-                <button>sign out</button>
-            </div>
+        </div>
+
+      
+    </section>
+
+    <!-- Cart section -->
+    <section>
+        <div style="margin-bottom: 20px;">
+            <h1>Trending Now</h1>
+            <select name="" id="">
+                <option value="India"></option>
+                <option value="GreenLand"></option>
+            </select>
+            <select name=" Movies" id="">
+                <option value="Movies"></option>
+                <option value="Series"></option>
+            </select>
+        </div>
+
+        <div class="carts_container">
+        <div class="carts">
+            images will come here
+            <button>Recently added</button>
+        </div>
+        <div class="carts">
+            images will come here
+            <button>Recently added</button>
+        </div>
+        <div class="carts">
+            images will come here
+            <button>Recently added</button>
+        </div>
+        <div class="carts">
+            images will come here
+            <button>Recently added</button>
         </div>
     </div>
+    </section>
 </body>
-
 </html>
